@@ -1,0 +1,30 @@
+/* Common */
+F6F6F6
+:root{
+
+    --bg_light:#F6F6F6;
+    --text:#23272A;
+    --button:#8EA1E1;
+    --text_footer:#7289DA;
+
+}
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Whitney', sans-serif;
+}
+
+#site_header{
+    background-image: url(../img/jumbo.png);
+    height: 840px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
