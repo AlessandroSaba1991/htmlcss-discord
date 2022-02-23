@@ -2,7 +2,7 @@
 :root{
     --bg-header:#255ee9;
     --text-light: #ffffff;
-    --bg_light:#F6F6F6;
+    --bg_light:#f6f6f6;
     --text-dark:#23272A;
     --button:#8EA1E1;
     --text_footer:#7289DA;
@@ -49,6 +49,13 @@ a{
     transform: translate(-50%,-50%);
 }
 
+.m_left{
+    margin-left: 10%;
+}
+
+.m_right{
+    margin-right: 10%;
+}
 
 .button{
     padding: 14px 28px;
@@ -57,17 +64,46 @@ a{
     text-decoration: none;
 }
 
+.container{
+    width: 1800px;
+    margin: 0 auto;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.text_container{
+    width: 100%;
+    height: 100%;
+}
+
 .wave{
     background-image: url(../img/wave.svg);
-    filter: opacity(0.1);
+    filter: opacity(0.035);
     height: 300px;
     margin-top: 125px;
+}
+
+.inverter{
+    transform: rotate(180deg);
+    margin: 0;
 }
 
 .bg_dark{
     background-color: var(--bg_light);
 }
 
+.stars{
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    width: 950px;
+    padding: 65px;
+    margin: 0 auto;
+    background-position: unset;
+    background-size: contain;
+}
 
 /* Header */
 #site_header{
@@ -80,11 +116,6 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-}
-
-.container{
-    width: 1800px;
-    margin: 0 auto;
 }
 
 .navbar{
@@ -152,12 +183,14 @@ a{
 }
 
 /* main */
-/* 1st section */
+
 .col_img,
 .col_text{
     height: 800px;
-    margin: 100px 0;
+    margin-top: 100px;
+    margin-bottom: 100px; 
 }
+
 .col_img{
     width: 60%;
     float: left;
@@ -167,16 +200,6 @@ a{
     width: 30%;
     float: left;
     padding-top: 110px;
-    margin-left: 10%;
-}
-
-.img{
-    width: 100%;
-    height: 100%;
-}
-.text_container{
-    width: 100%;
-    height: 100%;
 }
 
 .col_text > h1{
@@ -184,7 +207,41 @@ a{
     color: var(--text-dark);
     margin-bottom: 50px;
 }
+
 .col_text >p {
     font-size: 34px;
     color: var(--text-dark);
+}
+
+.last_section{
+    text-align: center;
+    
+}
+
+.last_section > h1{
+    font-size: 74px;
+    color: var(--text-dark);
+    padding-top: 100px;
+    margin-bottom: 200px;
+    
+}
+
+.last_section > p{
+    font-size: 34px;
+    color: var(--text-dark);
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+}
+
+.stars > span{
+    display: inline-block;
+    font-size: 45px;
+    color: var(--text-dark);
+}
+
+.violet_download{
+    background-color: var(--button);
+    color:var(--text-light);
+    font-size: 20px;
 }
